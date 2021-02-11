@@ -6,6 +6,7 @@
 (require-mod web-browser)
 (require-mod hierarchy)
 (require-mod dev-runes)
+(require-mod fire-particles)
 
 (define family-guy-christmas-url "https://img-9gag-fun.9cache.com/photo/adV38YV_460svvp9.webm")
 (define bob-ross-url "https://img-9gag-fun.9cache.com/photo/aEPrBxG_460svvp9.webm")
@@ -21,6 +22,9 @@
 (define dbutt-url "https://i.kym-cdn.com/entries/icons/original/000/001/030/DButt.jpg")
 (define potato-url "https://img-9gag-fun.9cache.com/photo/aepGYbv_460s.jpg")
 (define racket-url "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Racket-logo.svg/768px-Racket-logo.svg.png")
+(define scratch-url "https://scratch.mit.edu")
+(define doom-url "https://playclassic.games/games/first-person-shooter-dos-games-online/play-doom-online/play/")
+(define prince-of-persia-url "https://playclassic.games/games/platform-dos-games-online/play-prince-of-persia-online/play/")
 
 (define (meme-video url)
   (web-browser (serve-html-url (video src: url
@@ -96,6 +100,7 @@
                      (web-browser:my-mod-lang #:with-paren-runes? #t)
                      (hierarchy:my-mod-lang)
                      (dev-runes:my-mod-lang)
+                     (fire-particles:my-mod-lang)
                      ))))
 
 
